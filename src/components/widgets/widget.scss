@@ -1,3 +1,5 @@
+@import '../../common/common-css-rule.scss';
+
 $color-white: #fff;
 $color-indigo: #7d3c98;
 $color-black: #566573;
@@ -30,8 +32,6 @@ $radius: 0.25rem;
   flex: 1;
   justify-content: space-between;
   padding: 0.625rem;
-  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   border-radius: $radius;
   height: 6.25rem;
   transition: $transition;
