@@ -4,10 +4,10 @@ import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
+import PropTypes from 'prop-types';
 
 import './widget.scss';
 
-// eslint-disable-next-line react/prop-types
 const Widget = ({ type }) => {
   let data;
   const amount = 100;
@@ -56,7 +56,7 @@ const Widget = ({ type }) => {
     case 'balance':
       data = {
         title: 'BALANCE',
-        isMoney: false,
+        isMoney: true,
         link: 'See details',
         icon: (<AccountBalanceWalletOutlinedIcon
           className="icon"
@@ -69,12 +69,11 @@ const Widget = ({ type }) => {
       break;
   }
   return (
-    <div className="widget">
+    <div className="widget container">
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
           {data.isMoney && '$' }
-          {' '}
           {amount}
         </span>
         <span className="link">{data.link}</span>
@@ -88,6 +87,10 @@ const Widget = ({ type }) => {
       </div>
     </div>
   );
+};
+
+Widget.propTypes = {
+  type: PropTypes.string.isRequired,
 };
 
 export default Widget;
