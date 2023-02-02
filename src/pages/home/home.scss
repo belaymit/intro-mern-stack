@@ -3,10 +3,14 @@
     .home-container {
       flex: 6;
 
-      .widgets {
+      .widgets, .charts {
         display: flex;
         padding: 1.25rem;
         gap: 1.25rem;
+      }
+
+      .charts {
+        padding: 0.3125rem 1.25rem;
       }
   }
 }
