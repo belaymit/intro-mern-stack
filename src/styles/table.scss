@@ -14,13 +14,16 @@
         margin-right: 0.625rem;
       }
     }
+
     .status {
       padding: 0.3125rem;
       border-radius: 0.3125rem;
+
       &.Approved {
         color: green;
         background-color: rgba(0, 128, 0, 0.151);
       }
+
       &.Pending {
         color: goldenrod;
         background-color: rgba(189, 189, 3, 0.103);

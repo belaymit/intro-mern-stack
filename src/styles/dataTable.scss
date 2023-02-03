@@ -25,15 +25,18 @@
       background-color: rgba(0, 128, 0, 0.05);
       color: green;
     }
+
     &.pending {
       background-color: rgba(201, 172, 9, 0.05);
       color: goldenrod;
     }
+
     &.passive {
       background-color: rgba(201, 50, 13, 0.05);
       color: red;
     }
   }
+
   .cell-action {
     display: flex;
     align-items: center;
@@ -46,6 +49,7 @@
       border: 1px dotted rgba(0, 0, 139, 0.596);
       cursor: pointer;
     }
+
     .delete-button {
       padding: 0.125rem 0.3125rem;
       border-radius: 0.3125rem;
