@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   AreaChart, Area, XAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from 'recharts';
@@ -31,10 +32,10 @@ const data = [
   },
 ];
 
-const Chart = () => (
+const Chart = ({ title, aspect }) => (
   <div className="chart container">
-    <div className="title">Last six Month&apos;s (Revenue)</div>
-    <ResponsiveContainer width="100%" aspect={3 / 1}>
+    <div className="title">{title}</div>
+    <ResponsiveContainer width="100%" aspect={aspect}>
       <AreaChart
         width={730}
         height={250}
@@ -63,4 +64,8 @@ const Chart = () => (
   </div>
 );
 
+Chart.propTypes = {
+  aspect: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+};
 export default Chart;
