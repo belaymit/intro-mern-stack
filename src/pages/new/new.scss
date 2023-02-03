@@ -1,1 +1,81 @@
 @import '../../common/common-css-rule.scss';
+
+.new {
+  display: flex;
+  width: 100%;
+
+  .new-container {
+    flex: 6;
+
+    .top {
+      padding: 1.25rem;
+      margin: 1.25rem;
+      display: flex;
+
+      h1 {
+        color: lightgray;
+        font-size: 1.25rem;
+      }
+    }
+    .bottom {
+      padding: 1.25rem;
+      margin: 1.25rem;
+      display: flex;
+    
+
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 6.125rem;
+          height: 6.125rem;
+          border-radius: 50%;
+          object-fit: contain;
+        }
+      }
+      .right {
+        flex: 2;
+
+        form {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          gap: 1.875rem;
+
+          .form-input {
+            width: 40%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 0.625rem;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+
+            input {
+              width: 100%;
+              padding: 0.3125rem;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+
+          button {
+            width: 9.375rem;
+            padding: 0.625rem;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}
