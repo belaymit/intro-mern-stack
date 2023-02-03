@@ -74,6 +74,10 @@ $dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         transition: $transition;
 
+        a {
+          text-decoration: none;
+        }
+
         .icon {
           color: $color-indigo;
           font-size: 1.25rem;
