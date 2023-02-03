@@ -1,0 +1,15 @@
+@import '../common/common-css-rule.scss';
+.chart {
+  flex: 4;
+
+  .title {
+    font-size: 1.3rem;
+    color: rgb(19, 166, 211);
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .chart-grid {
+    stroke: rgb(230, 227, 227);
+  }
+}
