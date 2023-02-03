@@ -1,0 +1,9 @@
+@import '../../common/common-css-rule.scss';
+.list {
+  display: flex;
+  width: 100%;
+
+  .list-container {
+    flex: 6;
+  }
+}
