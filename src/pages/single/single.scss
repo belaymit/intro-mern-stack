@@ -1,1 +1,77 @@
 @import '../../common/common-css-rule.scss';
+.single {
+  display: flex;
+  width: 100%;
+
+  .single-container {
+    flex: 6;
+
+    .top {
+      padding: 1.25rem;
+      display: flex;
+      gap: 1.25rem;
+
+      .left {
+        flex: 1;
+        padding: 1.05rem;
+        position: relative;
+
+        .edit-btn {
+          position: absolute;
+          top: 0.05rem;
+          right: 0.05rem;
+          background: rgba(140, 141, 145, 0.151);
+          color: rgba(255, 68, 0, 0.89);
+          font-size: 1.2rem;
+          padding: 0.25rem;
+          border-radius: 0.5rem 0 0 0.5rem;
+        }
+
+        .item  {
+          display: flex;
+          justify-content: space-between;
+          gap: 1.25rem;
+
+          .item-img {
+            width: 6.25rem;
+            height: 6.25rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            .item-title {
+              margin-bottom: 0.625rem;
+              color: #555;
+
+              .detail-item {
+                margin-bottom: 0.625rem;
+                font-size: 0.875rem;
+
+                .item-key {
+                  font-weight: bold;
+                  color: gray;
+                  margin-right: 0.3125rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 2;
+      }
+    }
+
+    .title {
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+      color: lightgray;
+    } 
+
+    .bottom {
+      margin: 0.25rem 1rem;
+      padding: 1.25rem;
+    }
+  }
+}
