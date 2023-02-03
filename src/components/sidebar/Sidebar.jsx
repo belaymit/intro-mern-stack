@@ -12,6 +12,7 @@ import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 import InsertChartOutlinedIcon from '@mui/icons-material/InsertChartOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import './sidebar.scss';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => (
   <div className="sidebar">
@@ -22,13 +23,17 @@ const Sidebar = () => (
       <ul>
         <p className="title">main</p>
         <li>
-          <DashboardIcon className="icon" />
-          <span>Dashboard</span>
+          <NavLink to="/">
+            <DashboardIcon className="icon" />
+            <span>Dashboard</span>
+          </NavLink>
         </li>
         <p className="title">lists</p>
         <li>
-          <Person2OutlinedIcon className="icon" />
-          <span>Users</span>
+          <NavLink to="/users">
+            <Person2OutlinedIcon className="icon" />
+            <span>Users</span>
+          </NavLink>
         </li>
         <li>
           <StoreOutlinedIcon className="icon" />
