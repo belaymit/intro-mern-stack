@@ -1,0 +1,37 @@
+$color-white: #fff;
+$color-indigo: #7d3c98;
+$color-black: #566573;
+$background-clr: #f2f4f4;
+$light-orange-clr: #e59866;
+$color-primary: #3498db;
+$orange-clr: #ff7800;
+$light-orange: #dc7633;
+$black: #130f40;
+$light-clr: #666;
+$dark-orange: #a04000;
+$dark-red: #c0392b;
+$box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+$border: 0.2rem solid rgba(0, 0, 0, 0.1);
+$outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+$outline-hover: 0.2rem solid var(--black);
+
+/* font family */
+
+$font-family-primary: "Poppins", sans-serif;
+$ff-secondary: "Roboto", sans-serif;
+$ff-nunito:"Nunito", sans-serif;
+$ff-logo: 'Satisfy', cursive;
+$transition: all 0.5s linear;
+$spacing: 0.1rem;
+$radius: 0.25rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff-nunito;
+}

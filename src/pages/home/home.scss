@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+
+  .home-container {
+    flex: 6;
+
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 1.25rem;
+      gap: 1.25rem;
+    }
+
+    .charts {
+      padding: 0.3125rem 1.25rem;
+    }
+
+    .list-container {
+      margin: 1.25rem;
+      padding: 1.25rem;
+
+      .list-title {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 0.973rem;
+      }
+    }
+  }
+}

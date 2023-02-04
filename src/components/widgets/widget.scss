@@ -1,0 +1,87 @@
+@import '../../common/common-css-rule.scss';
+
+$color-white: #fff;
+$color-indigo: #7d3c98;
+$color-black: #566573;
+$background-clr: #f2f4f4;
+$light-orange-clr: #e59866;
+$color-primary: #3498db;
+$orange-clr: #ff7800;
+$light-orange: #dc7633;
+$black: #130f40;
+$light-clr: #666;
+$dark-orange: #a04000;
+$dark-red: #c0392b;
+$box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+$border: 0.2rem solid rgba(0, 0, 0, 0.1);
+$outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+$outline-hover: 0.2rem solid $black;
+
+/* font family */
+
+$font-family-primary: "Poppins", sans-serif;
+$ff-secondary: "Roboto", sans-serif;
+$ff-nunito:"Nunito", sans-serif;
+$ff-logo: 'Satisfy', cursive;
+$transition: all 0.5s linear;
+$spacing: 0.1rem;
+$radius: 0.25rem;
+
+.widget {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0.625rem;
+  border-radius: $radius;
+  height: 6.25rem;
+  transition: $transition;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-weight: bold;
+      font-size: 1rem;
+      color: rgb(201, 197, 197);
+    }
+
+    .counter {
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+
+    .link {
+      width: max-content;
+      font-size: 0.875rem;
+      border-bottom: 1px solid gray;
+    }
+
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+
+      &.positive {
+        color: green;
+      }
+
+      .negative {
+        color: red;
+      }
+    }
+
+    .icon {
+      font-size: 1.75rem;
+      padding: 0.3125rem;
+      border-radius: 0.3125rem;
+      align-self: flex-end;
+    }
+  }
+
+  &:hover {
+    outline: $outline-hover;
+  }
+}

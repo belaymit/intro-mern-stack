@@ -1,0 +1,102 @@
+$color-white: #fff;
+$white-smoke: whitesmoke;
+$color-indigo: #7d3c98;
+$color-purple: #7451f8;
+$color-black: #566573;
+$background-clr: #f2f4f4;
+$light-orange-clr: #e59866;
+$color-primary: #3498db;
+$orange-clr: #ff7800;
+$light-orange: #dc7633;
+$black: #130f40;
+$light-clr: rgb(243, 240, 240);
+$dark-orange: #a04000;
+$dark-red: #c0392b;
+$box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+$border: 0.2rem solid rgba(0, 0, 0, 0.1);
+$outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+$outline-hover: 0.2rem solid var(--black);
+
+/* font family */
+
+$font-family-primary: "Poppins", sans-serif;
+$ff-secondary: "Roboto", sans-serif;
+$ff-nunito:"Nunito", sans-serif;
+$ff-logo: 'Satisfy', cursive;
+$transition: all 0.5s linear;
+$spacing: 0.1rem;
+$radius: 0.25rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+.navbar {
+  height: 3.125rem;
+  border-bottom: 0.3px solid $light-clr;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: $color-black;
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    padding: 2rem 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid lightgrey;
+      padding: 0.1875rem;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-right: 1.25rem;
+        position: relative;
+
+        .icon {
+          font-size: 1.25rem;
+        }
+
+        .avatar {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+        }
+
+        .counter {
+          width: 1.125rem;
+          height: 1.125rem;
+          background-color: red;
+          border-radius: 50%;
+          color: $color-white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.75rem;
+          position: absolute;
+          top: -0.5rem;
+          right: -0.3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import '../common/common-css-rule.scss';
+
+.data-table {
+  height: 600px;
+  padding: 1.25rem;
+
+  .data-table-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 0.625rem;
+    width: 100%;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 1rem;
+      font-weight: 400;
+      border: 1px dotted green;
+      padding: 0.3125rem;
+      border-radius: 0.3125rem;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(6, 66, 145);
+        color: #fff;
+      }
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.25rem;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+
+    &.pending {
+      background-color: rgba(201, 172, 9, 0.05);
+      color: goldenrod;
+    }
+
+    &.passive {
+      background-color: rgba(201, 50, 13, 0.05);
+      color: red;
+    }
+  }
+
+  .cell-action {
+    display: flex;
+    align-items: center;
+    gap: 0.973rem;
+
+    .view-button {
+      padding: 0.125rem 0.3125rem;
+      border-radius: 0.3125rem;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+
+    .delete-button {
+      padding: 0.125rem 0.3125rem;
+      border-radius: 0.3125rem;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+}
