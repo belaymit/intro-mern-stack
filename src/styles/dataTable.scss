@@ -4,6 +4,33 @@
   height: 600px;
   padding: 1.25rem;
 
+  .data-table-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: gray;
+    margin-bottom: 0.625rem;
+    width: 100%;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 1rem;
+      font-weight: 400;
+      border: 1px dotted green;
+      padding: 0.3125rem;
+      border-radius: 0.3125rem;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(6, 66, 145);
+        color: #fff;
+      }
+
+    }
+  }
   .cellWithImg {
     display: flex;
     align-items: center;
