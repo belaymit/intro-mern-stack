@@ -23,9 +23,9 @@ const App = () => {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/users">
+            <Route path="users">
               <Route index element={<List />} />
-              <Route path=":userId" element={<Single />} />
+              <Route path="single-user" element={<Single />} />
               <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
             </Route>
             <Route path="products">
